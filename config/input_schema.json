@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Smart Factory Sensor Analysis Input",
+  "description": "Input schema for the smart factory sensor analysis agent.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "rules",
+    "data"
+  ],
+  "properties": {
+    "rules": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "temp",
+        "pressure",
+        "vibration"
+      ],
+      "properties": {
+        "temp": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "normal_min",
+            "normal_max",
+            "abnormal_low",
+            "abnormal_high"
+          ],
+          "properties": {
+            "normal_min": {
+              "type": "number"
+            },
+            "normal_max": {
+              "type": "number"
+            },
+            "abnormal_low": {
+              "type": "number"
+            },
+            "abnormal_high": {
+              "type": "number"
+            }
+          }
+        },
+        "pressure": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "normal_min",
+            "normal_max",
+            "abnormal_low",
+            "abnormal_high"
+          ],
+          "properties": {
+            "normal_min": {
+              "type": "number"
+            },
+            "normal_max": {
+              "type": "number"
+            },
+            "abnormal_low": {
+              "type": "number"
+            },
+            "abnormal_high": {
+              "type": "number"
+            }
+          }
+        },
+        "vibration": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "min_value",
+            "normal_min",
+            "normal_max",
+            "abnormal_high"
+          ],
+          "properties": {
+            "min_value": {
+              "type": "number"
+            },
+            "normal_min": {
+              "type": "number"
+            },
+            "normal_max": {
+              "type": "number"
+            },
+            "abnormal_high": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    },
+    "data": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "row",
+          "timestamp",
+          "temp",
+          "pressure",
+          "vibration"
+        ],
+        "properties": {
+          "row": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "timestamp": {
+            "type": "string"
+          },
+          "temp": {
+            "type": "number"
+          },
+          "pressure": {
+            "type": "number"
+          },
+          "vibration": {
+            "type": "number"
+          }
+        }
+      }
+    }
+  }
+}

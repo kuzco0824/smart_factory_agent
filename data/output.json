@@ -1,0 +1,1696 @@
+{
+  "results": [
+    {
+      "row": 1,
+      "timestamp": "2026-08-15 21:56:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "temp",
+        "pressure"
+      ],
+      "sensor_scores": {
+        "temp": 0.05,
+        "pressure": 0.3333,
+        "vibration": 0.0
+      },
+      "score": 0.3333,
+      "reason": "溫度與壓力感測器數值已離開正常範圍，但尚未達到異常門檻。",
+      "suggestion": "建議對溫度和壓力感測器加強監控，並進行預防性檢查以防數值持續惡化。"
+    },
+    {
+      "row": 2,
+      "timestamp": "2026-08-15 21:57:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "temp"
+      ],
+      "sensor_scores": {
+        "temp": 0.15,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.15,
+      "reason": "溫度感測器偏高，進入警告範圍。",
+      "suggestion": "建議對溫度進行預防性監控，注意其後續變化。"
+    },
+    {
+      "row": 3,
+      "timestamp": "2026-08-15 21:58:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "temp",
+        "vibration"
+      ],
+      "sensor_scores": {
+        "temp": 0.2,
+        "pressure": 0.0,
+        "vibration": 0.5
+      },
+      "score": 0.5,
+      "reason": "溫度偏高且震動偏低，皆處於警告狀態。",
+      "suggestion": "建議檢查設備的震動感測器及溫度調控模組，進行預防性檢查。"
+    },
+    {
+      "row": 4,
+      "timestamp": "2026-08-15 21:59:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "temp"
+      ],
+      "sensor_scores": {
+        "temp": 0.35,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.35,
+      "reason": "溫度感測器偏高，進入警告範圍。",
+      "suggestion": "建議加強溫度監控，檢查冷卻設備運作是否正常。"
+    },
+    {
+      "row": 5,
+      "timestamp": "2026-08-15 22:00:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "temp"
+      ],
+      "sensor_scores": {
+        "temp": 0.95,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.95,
+      "reason": "溫度顯著偏高已接近異常門檻，目前仍屬警告範圍。",
+      "suggestion": "溫度已高度接近臨界值，強烈建議立即檢查溫控系統及散熱狀況。"
+    },
+    {
+      "row": 6,
+      "timestamp": "2026-08-15 22:01:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "temp"
+      ],
+      "sensor_scores": {
+        "temp": 0.15,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.15,
+      "reason": "溫度感測器數值略高於正常範圍，處於警告狀態。",
+      "suggestion": "建議對溫度進行預防性監控，維持日常維護紀錄。"
+    },
+    {
+      "row": 7,
+      "timestamp": "2026-08-15 22:02:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "pressure"
+      ],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.3333,
+        "vibration": 0.0
+      },
+      "score": 0.3333,
+      "reason": "壓力偏低進入警告狀態。",
+      "suggestion": "建議監控壓力管線與閥門，確保無微小洩漏。"
+    },
+    {
+      "row": 8,
+      "timestamp": "2026-08-15 22:03:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "temp",
+        "pressure"
+      ],
+      "sensor_scores": {
+        "temp": 0.7,
+        "pressure": 0.3333,
+        "vibration": 0.0
+      },
+      "score": 0.7,
+      "reason": "溫度偏高與壓力偏低，兩者皆進入警告範圍。",
+      "suggestion": "建議對溫控與壓力輸送系統進行排查與預防性維護。"
+    },
+    {
+      "row": 9,
+      "timestamp": "2026-08-15 22:04:00",
+      "detect": "abnormal",
+      "anomaly_sensors": [
+        "vibration"
+      ],
+      "warning_sensors": [
+        "temp",
+        "pressure"
+      ],
+      "sensor_scores": {
+        "temp": 0.7,
+        "pressure": 0.3333,
+        "vibration": 1.0
+      },
+      "score": 1.0,
+      "reason": "震動感測器達到 0.11，已大幅超過 0.07 的異常門檻；此外，溫度與壓力亦處於警告狀態。",
+      "suggestion": "請立即停機檢查震動異常源（如軸承磨損或結構鬆動），並對溫度和壓力異常趨勢進行聯合排查。"
+    },
+    {
+      "row": 10,
+      "timestamp": "2026-08-15 22:05:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.0,
+      "reason": "所有感測器數值皆在正常範圍內。",
+      "suggestion": "設備運作正常，請持續進行日常監控。"
+    },
+    {
+      "row": 11,
+      "timestamp": "2026-08-15 22:06:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "pressure"
+      ],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.3333,
+        "vibration": 0.0
+      },
+      "score": 0.3333,
+      "reason": "壓力感測器數值略低於正常範圍，進入警告狀態。",
+      "suggestion": "建議追蹤壓力變化趨勢，檢查壓力補償系統運作。"
+    },
+    {
+      "row": 12,
+      "timestamp": "2026-08-15 22:07:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "temp"
+      ],
+      "sensor_scores": {
+        "temp": 0.15,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.15,
+      "reason": "溫度數值略高於正常上限，進入警告狀態。",
+      "suggestion": "建議對溫度進行常規預防性監控。"
+    },
+    {
+      "row": 13,
+      "timestamp": "2026-08-15 22:08:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "pressure"
+      ],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.3333,
+        "vibration": 0.0
+      },
+      "score": 0.3333,
+      "reason": "壓力數值略低於正常範圍，進入警告狀態。",
+      "suggestion": "建議維持對壓力數據的追蹤，以確保製程穩定。"
+    },
+    {
+      "row": 14,
+      "timestamp": "2026-08-15 22:09:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "temp",
+        "pressure"
+      ],
+      "sensor_scores": {
+        "temp": 0.05,
+        "pressure": 0.3333,
+        "vibration": 0.0
+      },
+      "score": 0.3333,
+      "reason": "溫度偏高且壓力偏低，雙雙處於警告狀態。",
+      "suggestion": "建議加強監控此兩項感測器，並做好相應製程參數微調之準備。"
+    },
+    {
+      "row": 15,
+      "timestamp": "2026-08-15 22:10:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "temp",
+        "vibration"
+      ],
+      "sensor_scores": {
+        "temp": 0.2,
+        "pressure": 0.0,
+        "vibration": 0.5
+      },
+      "score": 0.5,
+      "reason": "溫度偏高與震動偏低，皆進入警告範圍。",
+      "suggestion": "建議檢查溫控與機械傳動系統，進行常規預防性點檢。"
+    },
+    {
+      "row": 16,
+      "timestamp": "2026-08-15 22:11:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.0,
+      "reason": "所有感測器數值皆在正常範圍內。",
+      "suggestion": "設備運作正常，請持續進行日常監控。"
+    },
+    {
+      "row": 17,
+      "timestamp": "2026-08-15 22:12:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "temp"
+      ],
+      "sensor_scores": {
+        "temp": 0.05,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.05,
+      "reason": "溫度數值略高於正常範圍，進入警告狀態。",
+      "suggestion": "建議維持對溫度感測器的常規監測。"
+    },
+    {
+      "row": 18,
+      "timestamp": "2026-08-15 22:13:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "temp"
+      ],
+      "sensor_scores": {
+        "temp": 0.8,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.8,
+      "reason": "溫度數值明顯偏高，高度接近異常上限門檻。",
+      "suggestion": "建議立即進行預防性檢查溫控系統，以避免其進入異常狀態。"
+    },
+    {
+      "row": 19,
+      "timestamp": "2026-08-15 22:14:00",
+      "detect": "abnormal",
+      "anomaly_sensors": [
+        "pressure"
+      ],
+      "warning_sensors": [
+        "temp"
+      ],
+      "sensor_scores": {
+        "temp": 0.8,
+        "pressure": 1.0,
+        "vibration": 0.0
+      },
+      "score": 1.0,
+      "reason": "壓力檢測值為 0.65，已低於異常門檻 0.97；此外，溫度處於警告範圍。",
+      "suggestion": "請立即檢查壓力管道與氣壓系統是否有嚴重洩漏或壓力源故障，並密切監控溫度警告狀態。"
+    },
+    {
+      "row": 20,
+      "timestamp": "2026-08-15 22:15:00",
+      "detect": "abnormal",
+      "anomaly_sensors": [
+        "pressure"
+      ],
+      "warning_sensors": [
+        "temp",
+        "vibration"
+      ],
+      "sensor_scores": {
+        "temp": 0.85,
+        "pressure": 1.0,
+        "vibration": 0.3333
+      },
+      "score": 1.0,
+      "reason": "壓力依然異常偏低（0.65），低於門檻 0.97；溫度與震動此時亦進入警告範圍。",
+      "suggestion": "請立即排查壓力管路、密封圈並對氣動系統進行修復。同時需防範溫度與震動的潛在異常上升。"
+    },
+    {
+      "row": 21,
+      "timestamp": "2026-08-15 22:16:00",
+      "detect": "abnormal",
+      "anomaly_sensors": [
+        "pressure"
+      ],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 1.0,
+        "vibration": 0.0
+      },
+      "score": 1.0,
+      "reason": "壓力數值為 0.63，低於異常門檻 0.97，判定為異常。",
+      "suggestion": "必須立即停機檢修壓力控制模組、閥門或密封元件以還原正常壓力。"
+    },
+    {
+      "row": 22,
+      "timestamp": "2026-08-15 22:17:00",
+      "detect": "abnormal",
+      "anomaly_sensors": [
+        "pressure"
+      ],
+      "warning_sensors": [
+        "temp"
+      ],
+      "sensor_scores": {
+        "temp": 0.45,
+        "pressure": 1.0,
+        "vibration": 0.0
+      },
+      "score": 1.0,
+      "reason": "壓力異常偏低（0.64），低於門檻 0.97；溫度同時處於警告狀態。",
+      "suggestion": "請維修人員對壓力洩漏點進行修復，並對警告狀態下的溫控部件進行排查。"
+    },
+    {
+      "row": 23,
+      "timestamp": "2026-08-15 22:18:00",
+      "detect": "abnormal",
+      "anomaly_sensors": [
+        "pressure"
+      ],
+      "warning_sensors": [
+        "vibration"
+      ],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 1.0,
+        "vibration": 0.3333
+      },
+      "score": 1.0,
+      "reason": "壓力異常偏低（0.65）；震動數值則處於警告範圍。",
+      "suggestion": "請排除壓力供應問題，並對震動元件進行預防性校準與固定。"
+    },
+    {
+      "row": 24,
+      "timestamp": "2026-08-15 22:19:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.0,
+      "reason": "所有感測器均回歸正常範圍內。",
+      "suggestion": "設備運作正常，繼續維持常規觀察。"
+    },
+    {
+      "row": 25,
+      "timestamp": "2026-08-15 22:20:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "temp"
+      ],
+      "sensor_scores": {
+        "temp": 0.45,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.45,
+      "reason": "溫度感測器略微偏高，處於警告區間。",
+      "suggestion": "建議對溫度調度進行常規監視，注意冷卻水流量。"
+    },
+    {
+      "row": 26,
+      "timestamp": "2026-08-15 22:21:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "temp"
+      ],
+      "sensor_scores": {
+        "temp": 0.4,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.4,
+      "reason": "溫度偏高進入警告狀態。",
+      "suggestion": "建議加強溫度的預防性檢測。"
+    },
+    {
+      "row": 27,
+      "timestamp": "2026-08-15 22:22:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.0,
+      "reason": "所有感測器皆在正常範圍內。",
+      "suggestion": "設備狀態穩定，維持正常操作監測。"
+    },
+    {
+      "row": 28,
+      "timestamp": "2026-08-15 22:23:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "vibration"
+      ],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.0,
+        "vibration": 0.3333
+      },
+      "score": 0.3333,
+      "reason": "震動數值略為升高，進入警告狀態。",
+      "suggestion": "建議加強震動監控，巡查機械螺絲是否有鬆動痕跡。"
+    },
+    {
+      "row": 29,
+      "timestamp": "2026-08-15 22:24:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "pressure"
+      ],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.3333,
+        "vibration": 0.0
+      },
+      "score": 0.3333,
+      "reason": "壓力數值低於正常下限，進入警告狀態。",
+      "suggestion": "建議進行壓力系統常規檢查，維持預防性監控。"
+    },
+    {
+      "row": 30,
+      "timestamp": "2026-08-15 22:25:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.0,
+      "reason": "所有感測器均回歸正常範圍內。",
+      "suggestion": "設備運作正常，繼續維持常規觀察。"
+    },
+    {
+      "row": 31,
+      "timestamp": "2026-08-15 22:26:00",
+      "detect": "abnormal",
+      "anomaly_sensors": [
+        "temp",
+        "pressure",
+        "vibration"
+      ],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 1.0,
+        "pressure": 1.0,
+        "vibration": 1.0
+      },
+      "score": 1.0,
+      "reason": "全感測器出現嚴重異常。溫度（21.7）低於異常下限 43.0，壓力（1.36）與震動（0.13）皆遠超異常上限門檻（分別為 1.08 與 0.07）。",
+      "suggestion": "此為重大系統性異常，請立即執行緊急停機程序，對系統、動力來源與儀器線路進行徹底大檢修。"
+    },
+    {
+      "row": 32,
+      "timestamp": "2026-08-15 22:27:00",
+      "detect": "abnormal",
+      "anomaly_sensors": [
+        "temp",
+        "pressure",
+        "vibration"
+      ],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 1.0,
+        "pressure": 1.0,
+        "vibration": 1.0
+      },
+      "score": 1.0,
+      "reason": "全感測器持續嚴重異常。溫度 (20.0)、壓力 (1.34) 和震動 (0.12) 皆在異常警戒線外。",
+      "suggestion": "請保持停機狀態，徹底排查控制系統與外部干擾，待各項指標全面修復並校準後方可重新啟動。"
+    },
+    {
+      "row": 33,
+      "timestamp": "2026-08-15 22:28:00",
+      "detect": "abnormal",
+      "anomaly_sensors": [
+        "temp",
+        "pressure",
+        "vibration"
+      ],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 1.0,
+        "pressure": 1.0,
+        "vibration": 1.0
+      },
+      "score": 1.0,
+      "reason": "感測器全面異常。溫度（21.8）、壓力（1.34）、震動（0.12）皆位於異常區間。",
+      "suggestion": "應延續停機排障流程，對所有出錯感測器進行零點和量程校正，並檢查硬體聯鎖。"
+    },
+    {
+      "row": 34,
+      "timestamp": "2026-08-15 22:29:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.0,
+      "reason": "所有數據已全面回歸正常範圍。",
+      "suggestion": "重新啟動後狀況平穩，請密切觀察，維持日常巡檢。"
+    },
+    {
+      "row": 35,
+      "timestamp": "2026-08-15 22:30:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "temp",
+        "vibration"
+      ],
+      "sensor_scores": {
+        "temp": 0.9,
+        "pressure": 0.0,
+        "vibration": 0.3333
+      },
+      "score": 0.9,
+      "reason": "溫度偏低（43.2）且震動偏高（0.05），均落入警告級別。溫度特別接近異常下限。",
+      "suggestion": "建議對加熱器與底座避震阻尼進行檢修，預防數據進一步向異常偏離。"
+    },
+    {
+      "row": 36,
+      "timestamp": "2026-08-15 22:31:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.0,
+      "reason": "所有感測器皆在正常範圍內。",
+      "suggestion": "設備運作正常，請持續進行日常監控。"
+    },
+    {
+      "row": 37,
+      "timestamp": "2026-08-15 22:32:00",
+      "detect": "abnormal",
+      "anomaly_sensors": [
+        "pressure",
+        "vibration"
+      ],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 1.0,
+        "vibration": 1.0
+      },
+      "score": 1.0,
+      "reason": "壓力高達 1.39，震動達 0.18，雙雙突破異常上限門檻（1.08 與 0.07）。",
+      "suggestion": "請立即停機洩壓並檢修機械結構，確認壓力釋放閥是否卡死、傳動機構是否斷裂或嚴重磨損。"
+    },
+    {
+      "row": 38,
+      "timestamp": "2026-08-15 22:33:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "temp"
+      ],
+      "sensor_scores": {
+        "temp": 0.2,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.2,
+      "reason": "溫度（44.6）低於正常範圍下限，落入警告區域。",
+      "suggestion": "建議對加熱調控系統進行預防性監控，確保工作環境溫度穩定。"
+    },
+    {
+      "row": 39,
+      "timestamp": "2026-08-15 22:34:00",
+      "detect": "abnormal",
+      "anomaly_sensors": [
+        "temp",
+        "pressure",
+        "vibration"
+      ],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 1.0,
+        "pressure": 1.0,
+        "vibration": 1.0
+      },
+      "score": 1.0,
+      "reason": "所有感測器指標皆達異常。溫度 (65.5) 嚴重超標、壓力 (1.29) 及震動 (0.14) 均突破異常上限門檻。",
+      "suggestion": "此狀態代表極度危險。必須立即緊急停機，降溫、洩壓，並派資深工程師排查主動力源、控制迴路與安全連鎖裝置。"
+    },
+    {
+      "row": 40,
+      "timestamp": "2026-08-15 22:35:00",
+      "detect": "abnormal",
+      "anomaly_sensors": [
+        "temp",
+        "pressure",
+        "vibration"
+      ],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 1.0,
+        "pressure": 1.0,
+        "vibration": 1.0
+      },
+      "score": 1.0,
+      "reason": "全感測器持續處於異常狀態。溫度為 64.0，壓力為 1.29，震動為 0.13。",
+      "suggestion": "應繼續維持緊急停機檢修狀態，排查冷卻液洩漏、壓力調節閥失靈和機械轉向不平衡。"
+    },
+    {
+      "row": 41,
+      "timestamp": "2026-08-15 22:36:00",
+      "detect": "abnormal",
+      "anomaly_sensors": [
+        "temp",
+        "pressure",
+        "vibration"
+      ],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 1.0,
+        "pressure": 1.0,
+        "vibration": 1.0
+      },
+      "score": 1.0,
+      "reason": "所有感測器數值（溫度62.2、壓力1.28、震動0.12）皆高度異常。",
+      "suggestion": "在異常徹底查明並修復前，禁止強制復歸。請檢查加熱控制接觸器是否熔接、以及主軸是否變形。"
+    },
+    {
+      "row": 42,
+      "timestamp": "2026-08-15 22:37:00",
+      "detect": "abnormal",
+      "anomaly_sensors": [
+        "temp",
+        "pressure",
+        "vibration"
+      ],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 1.0,
+        "pressure": 1.0,
+        "vibration": 1.0
+      },
+      "score": 1.0,
+      "reason": "全感測器（溫度 62.9、壓力 1.29、震動 0.12）均處於異常數值範圍內。",
+      "suggestion": "建議隔離該工序段，全面檢測系統冷卻、加壓迴路，並確認控制卡件功能是否故障。"
+    },
+    {
+      "row": 43,
+      "timestamp": "2026-08-15 22:38:00",
+      "detect": "abnormal",
+      "anomaly_sensors": [
+        "temp",
+        "pressure",
+        "vibration"
+      ],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 1.0,
+        "pressure": 1.0,
+        "vibration": 1.0
+      },
+      "score": 1.0,
+      "reason": "感測器（溫度 62.2、壓力 1.29、震動 0.11）皆呈現高於上限之嚴重異常。",
+      "suggestion": "請依序對溫控、壓力供應與物理振動進行隔離排查與更換損壞零件。"
+    },
+    {
+      "row": 44,
+      "timestamp": "2026-08-15 22:39:00",
+      "detect": "abnormal",
+      "anomaly_sensors": [
+        "temp",
+        "pressure",
+        "vibration"
+      ],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 1.0,
+        "pressure": 1.0,
+        "vibration": 1.0
+      },
+      "score": 1.0,
+      "reason": "所有指標（溫度64.1、壓力1.27、震動0.12）均高於異常上限門檻。",
+      "suggestion": "保持停機並對該批次工藝狀態及生產線設備進行徹底復原檢修。"
+    },
+    {
+      "row": 45,
+      "timestamp": "2026-08-15 22:40:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.0,
+      "reason": "所有感測器皆在正常範圍內。",
+      "suggestion": "設備已復原，恢復正常操作，維持日常監控。"
+    },
+    {
+      "row": 46,
+      "timestamp": "2026-08-15 22:41:00",
+      "detect": "abnormal",
+      "anomaly_sensors": [
+        "temp",
+        "pressure",
+        "vibration"
+      ],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 1.0,
+        "pressure": 1.0,
+        "vibration": 1.0
+      },
+      "score": 1.0,
+      "reason": "全部感測器指標皆異常。溫度（21.9）與壓力（0.55）均低於下限門檻；震動（0.17）超出上限門檻。",
+      "suggestion": "系統可能遭遇跳電或嚴重氣動、結構故障，請立即安排停機，檢修總配電及壓力控制核心。"
+    },
+    {
+      "row": 47,
+      "timestamp": "2026-08-15 22:42:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.0,
+      "reason": "所有感測器皆在正常範圍內。",
+      "suggestion": "設備重新回歸正常軌道，維持一般監控即可。"
+    },
+    {
+      "row": 48,
+      "timestamp": "2026-08-15 22:43:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.0,
+      "reason": "所有感測器皆在正常範圍內。",
+      "suggestion": "運作穩定，繼續進行日常點檢紀錄。"
+    },
+    {
+      "row": 49,
+      "timestamp": "2026-08-15 22:44:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.0,
+      "reason": "所有感測器皆在正常範圍內。",
+      "suggestion": "運作正常，請持續進行常規監控。"
+    },
+    {
+      "row": 50,
+      "timestamp": "2026-08-15 22:45:00",
+      "detect": "abnormal",
+      "anomaly_sensors": [
+        "temp"
+      ],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 1.0,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 1.0,
+      "reason": "溫度檢測值為 40.6，低於異常下限門檻 43.0。",
+      "suggestion": "請立刻檢查溫控加熱器、熱電偶反饋迴路，確認是否存在加溫中斷或感測器失效問題。"
+    },
+    {
+      "row": 51,
+      "timestamp": "2026-08-15 22:46:00",
+      "detect": "abnormal",
+      "anomaly_sensors": [
+        "temp"
+      ],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 1.0,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 1.0,
+      "reason": "溫度數值（39.5）持續低於異常下限門檻 43.0。",
+      "suggestion": "請維持對加熱系統的故障排查，必要時更換加熱模組，並確認現場環境溫度干擾。"
+    },
+    {
+      "row": 52,
+      "timestamp": "2026-08-15 22:47:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.0,
+      "reason": "所有感測器皆在正常範圍內。",
+      "suggestion": "系統回歸正常狀態，請繼續保持日常巡檢。"
+    },
+    {
+      "row": 53,
+      "timestamp": "2026-08-15 22:48:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.0,
+      "reason": "所有感測器皆在正常範圍內。",
+      "suggestion": "系統穩定運作中，繼續常規觀察。"
+    },
+    {
+      "row": 54,
+      "timestamp": "2026-08-15 22:49:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "vibration"
+      ],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.0,
+        "vibration": 0.3333
+      },
+      "score": 0.3333,
+      "reason": "震動偏高進入警告範圍（0.05）。",
+      "suggestion": "建議對傳動機構與連接處進行預防性緊固與檢查。"
+    },
+    {
+      "row": 55,
+      "timestamp": "2026-08-15 22:50:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.0,
+      "reason": "所有感測器均回歸正常範圍內。",
+      "suggestion": "設備運作正常，繼續維持常規觀察。"
+    },
+    {
+      "row": 56,
+      "timestamp": "2026-08-15 22:51:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.0,
+      "reason": "所有感測器皆在正常範圍內。",
+      "suggestion": "運行參數正常，維持日常例行監測。"
+    },
+    {
+      "row": 57,
+      "timestamp": "2026-08-15 22:52:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.0,
+      "reason": "所有感測器皆在正常範圍內。",
+      "suggestion": "設備運轉平穩，請繼續保持日常巡檢。"
+    },
+    {
+      "row": 58,
+      "timestamp": "2026-08-15 22:53:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.0,
+      "reason": "所有感測器皆在正常範圍內。",
+      "suggestion": "運行平穩，保持日常監控即可。"
+    },
+    {
+      "row": 59,
+      "timestamp": "2026-08-15 22:54:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.0,
+      "reason": "所有感測器皆在正常範圍內。",
+      "suggestion": "運行狀態正常，保持常規點檢作業。"
+    },
+    {
+      "row": 60,
+      "timestamp": "2026-08-15 22:55:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.0,
+      "reason": "所有感測器皆在正常範圍內。",
+      "suggestion": "運作穩定，繼續進行日常監控與例行檢查。"
+    },
+    {
+      "row": 61,
+      "timestamp": "2026-08-15 22:56:00",
+      "detect": "abnormal",
+      "anomaly_sensors": [
+        "temp",
+        "pressure",
+        "vibration"
+      ],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 1.0,
+        "pressure": 1.0,
+        "vibration": 1.0
+      },
+      "score": 1.0,
+      "reason": "全部感測器嚴重異常：溫度 (64.3)、壓力 (1.46)、震動 (0.19) 皆超出各自上限異常臨界點。",
+      "suggestion": "請即刻中斷製程並緊急停機，降壓冷卻，並對其電控系統與氣動液壓元器件進行全面檢修。"
+    },
+    {
+      "row": 62,
+      "timestamp": "2026-08-15 22:57:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.0,
+      "reason": "全部指標已順利回歸正常範圍。",
+      "suggestion": "目前設備處於正常運行態勢，建議繼續跟蹤監視。"
+    },
+    {
+      "row": 63,
+      "timestamp": "2026-08-15 22:58:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "temp"
+      ],
+      "sensor_scores": {
+        "temp": 0.5,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.5,
+      "reason": "溫度數值（51.0）輕微偏高，落在警告區間。",
+      "suggestion": "建議對冷卻系統進行預防性監管，密切關注溫度上升速度。"
+    },
+    {
+      "row": 64,
+      "timestamp": "2026-08-15 22:59:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "temp"
+      ],
+      "sensor_scores": {
+        "temp": 0.3,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.3,
+      "reason": "溫度輕度偏高，處於警告範圍內。",
+      "suggestion": "建議維持常規預防性觀察，必要時調節散熱風扇。"
+    },
+    {
+      "row": 65,
+      "timestamp": "2026-08-15 23:00:00",
+      "detect": "abnormal",
+      "anomaly_sensors": [
+        "temp"
+      ],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 1.0,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 1.0,
+      "reason": "溫度感測器檢測到 42.7，已低於異常下限門檻 43.0。",
+      "suggestion": "建議立即確認加熱控溫單元運作是否中斷，並更換故障的溫度感測元件或線纜。"
+    },
+    {
+      "row": 66,
+      "timestamp": "2026-08-15 23:01:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.0,
+      "reason": "所有感測器數值皆處於正常範圍。",
+      "suggestion": "設備運作正常，請繼續進行日常點檢紀錄。"
+    },
+    {
+      "row": 67,
+      "timestamp": "2026-08-15 23:02:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "vibration"
+      ],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.0,
+        "vibration": 0.5
+      },
+      "score": 0.5,
+      "reason": "震動數值降至 0.01，進入偏低之警告區間。",
+      "suggestion": "建議檢查振動阻尼器、機械聯軸以及感測器固定狀態，防止其零點偏移。"
+    },
+    {
+      "row": 68,
+      "timestamp": "2026-08-15 23:03:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.0,
+      "reason": "所有感測器皆在正常範圍內。",
+      "suggestion": "設備運作正常，請持續進行日常監控。"
+    },
+    {
+      "row": 69,
+      "timestamp": "2026-08-15 23:04:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.0,
+      "reason": "所有感測器皆在正常範圍內。",
+      "suggestion": "狀態平穩，常規點檢，維持日常監控。"
+    },
+    {
+      "row": 70,
+      "timestamp": "2026-08-15 23:05:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "temp"
+      ],
+      "sensor_scores": {
+        "temp": 0.5,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.5,
+      "reason": "溫度數值（44.0）偏低，處於警告狀態。",
+      "suggestion": "建議加強對溫控迴路及現場環境溫差的預防性監控。"
+    },
+    {
+      "row": 71,
+      "timestamp": "2026-08-15 23:06:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "temp",
+        "pressure"
+      ],
+      "sensor_scores": {
+        "temp": 0.1,
+        "pressure": 0.3333,
+        "vibration": 0.0
+      },
+      "score": 0.3333,
+      "reason": "溫度（44.8）與壓力（0.99）皆低於其正常範圍下限，處於警告區間。",
+      "suggestion": "建議檢查系統進氣量及基礎預熱模組，實施常規製程微調與監控。"
+    },
+    {
+      "row": 72,
+      "timestamp": "2026-08-15 23:07:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "temp",
+        "vibration"
+      ],
+      "sensor_scores": {
+        "temp": 0.75,
+        "pressure": 0.0,
+        "vibration": 0.3333
+      },
+      "score": 0.75,
+      "reason": "溫度偏低（43.5）與震動偏高（0.05）雙雙呈現警告狀態，溫度已接近臨界低值。",
+      "suggestion": "建議密切排查溫控系統，並對震動加強監控，防止多項異常事件聯動爆發。"
+    },
+    {
+      "row": 73,
+      "timestamp": "2026-08-15 23:08:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "pressure"
+      ],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.3333,
+        "vibration": 0.0
+      },
+      "score": 0.3333,
+      "reason": "壓力數值略微偏低，落入警告狀態。",
+      "suggestion": "請加強日常對氣密性及輔助調壓閥的常態預防性點檢。"
+    },
+    {
+      "row": 74,
+      "timestamp": "2026-08-15 23:09:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "temp",
+        "vibration"
+      ],
+      "sensor_scores": {
+        "temp": 0.45,
+        "pressure": 0.0,
+        "vibration": 0.3333
+      },
+      "score": 0.45,
+      "reason": "溫度偏低且震動偏高，兩感測器均呈現警告信號。",
+      "suggestion": "建議對加溫器與底座安裝結構進行預防性緊固與確認。"
+    },
+    {
+      "row": 75,
+      "timestamp": "2026-08-15 23:10:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "pressure"
+      ],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.3333,
+        "vibration": 0.0
+      },
+      "score": 0.3333,
+      "reason": "壓力偏低落入警告臨界區。",
+      "suggestion": "建議持續監控其壓力變化趨勢，確保設備流道不發生堵塞或細微洩漏。"
+    },
+    {
+      "row": 76,
+      "timestamp": "2026-08-15 23:11:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "temp",
+        "pressure",
+        "vibration"
+      ],
+      "sensor_scores": {
+        "temp": 0.3,
+        "pressure": 0.3333,
+        "vibration": 0.3333
+      },
+      "score": 0.3333,
+      "reason": "全部感測器均輕微偏離正常，處於警告等級範圍。",
+      "suggestion": "全系統存在細微擾動，建議檢查綜合動力供應和現場環境控制是否出現偏移。"
+    },
+    {
+      "row": 77,
+      "timestamp": "2026-08-15 23:12:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "pressure",
+        "vibration"
+      ],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.6667,
+        "vibration": 0.3333
+      },
+      "score": 0.6667,
+      "reason": "壓力數值中度偏低，與輕微偏高的震動均處於警告中。",
+      "suggestion": "建議預防性維護氣壓調節系統，排查振動是否與流體壓力變化關聯。"
+    },
+    {
+      "row": 78,
+      "timestamp": "2026-08-15 23:13:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.0,
+      "reason": "所有感測器皆在正常範圍內。",
+      "suggestion": "設備運轉良好，維持日常檢測標準。"
+    },
+    {
+      "row": 79,
+      "timestamp": "2026-08-15 23:14:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "pressure",
+        "vibration"
+      ],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.3333,
+        "vibration": 0.3333
+      },
+      "score": 0.3333,
+      "reason": "壓力偏低與震動偏高，雙雙引發警告通知。",
+      "suggestion": "建議對氣路壓力與外部振動做常態預防性維護。"
+    },
+    {
+      "row": 80,
+      "timestamp": "2026-08-15 23:15:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "pressure"
+      ],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.3333,
+        "vibration": 0.0
+      },
+      "score": 0.3333,
+      "reason": "壓力偏低，目前處於警告區間。",
+      "suggestion": "持續追蹤壓力值，並檢視配氣單元工作氣壓。"
+    },
+    {
+      "row": 81,
+      "timestamp": "2026-08-15 23:16:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "pressure"
+      ],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.3333,
+        "vibration": 0.0
+      },
+      "score": 0.3333,
+      "reason": "壓力數值處於正常範圍下限外，判定為警告。",
+      "suggestion": "建議維持正常監控，在進行大保養時一併檢查是否有閥組老化漏氣。"
+    },
+    {
+      "row": 82,
+      "timestamp": "2026-08-15 23:17:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.0,
+      "reason": "所有感測器皆在正常範圍內。",
+      "suggestion": "設備運作正常，請持續進行日常監控。"
+    },
+    {
+      "row": 83,
+      "timestamp": "2026-08-15 23:18:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "temp",
+        "pressure"
+      ],
+      "sensor_scores": {
+        "temp": 0.1,
+        "pressure": 0.3333,
+        "vibration": 0.0
+      },
+      "score": 0.3333,
+      "reason": "溫度與壓力皆略低於正常區間，進入警告狀態。",
+      "suggestion": "建議在日常製程微調中，注意維持溫度和供氣壓力的穩定。"
+    },
+    {
+      "row": 84,
+      "timestamp": "2026-08-15 23:19:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.0,
+      "reason": "所有感測器皆在正常範圍內。",
+      "suggestion": "系統狀態正常，維持一般運行與日誌登記。"
+    },
+    {
+      "row": 85,
+      "timestamp": "2026-08-15 23:20:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "temp",
+        "pressure"
+      ],
+      "sensor_scores": {
+        "temp": 0.15,
+        "pressure": 0.3333,
+        "vibration": 0.0
+      },
+      "score": 0.3333,
+      "reason": "溫度與壓力數值均低於正常邊界，處於警告狀態。",
+      "suggestion": "建議密切留意溫度反饋及進氣閥輸出，預防製程指標跌入異常。"
+    },
+    {
+      "row": 86,
+      "timestamp": "2026-08-15 23:21:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "pressure"
+      ],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.3333,
+        "vibration": 0.0
+      },
+      "score": 0.3333,
+      "reason": "壓力感測器偏低進入警告狀態。",
+      "suggestion": "建議進行常規性的壓力管件和閥座檢查。"
+    },
+    {
+      "row": 87,
+      "timestamp": "2026-08-15 23:22:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.0,
+      "reason": "所有感測器皆在正常範圍內。",
+      "suggestion": "狀態理想，維持普通班表巡檢即可。"
+    },
+    {
+      "row": 88,
+      "timestamp": "2026-08-15 23:23:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "pressure"
+      ],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.3333,
+        "vibration": 0.0
+      },
+      "score": 0.3333,
+      "reason": "壓力出現偏低警告。",
+      "suggestion": "建議對氣源總閥作點點檢查，保持日常數值監視。"
+    },
+    {
+      "row": 89,
+      "timestamp": "2026-08-15 23:24:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "temp",
+        "pressure"
+      ],
+      "sensor_scores": {
+        "temp": 0.15,
+        "pressure": 0.6667,
+        "vibration": 0.0
+      },
+      "score": 0.6667,
+      "reason": "壓力數值中度偏低，且溫度微幅偏低，均處於警告範疇。",
+      "suggestion": "建議加強對溫控和氣動主管道的綜合巡查，預防多項次級部件失效。"
+    },
+    {
+      "row": 90,
+      "timestamp": "2026-08-15 23:25:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.0,
+      "reason": "所有感測器皆在正常範圍內。",
+      "suggestion": "設備運作正常，請持續進行日常監控。"
+    },
+    {
+      "row": 91,
+      "timestamp": "2026-08-15 23:26:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "pressure"
+      ],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.3333,
+        "vibration": 0.0
+      },
+      "score": 0.3333,
+      "reason": "壓力值低於正常起點，進入警告狀態。",
+      "suggestion": "建議檢查系統終端是否有些微用氣過大或輕微洩壓。"
+    },
+    {
+      "row": 92,
+      "timestamp": "2026-08-15 23:27:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.0,
+      "reason": "所有感測器皆在正常範圍內。",
+      "suggestion": "設備運作正常，維持例行常規巡查。"
+    },
+    {
+      "row": 93,
+      "timestamp": "2026-08-15 23:28:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "temp",
+        "pressure",
+        "vibration"
+      ],
+      "sensor_scores": {
+        "temp": 0.35,
+        "pressure": 0.3333,
+        "vibration": 0.3333
+      },
+      "score": 0.35,
+      "reason": "所有感測器均呈現輕微偏離的警告狀態。",
+      "suggestion": "建議大範圍盤查動力分配迴路與通風、流道部件，落實預防維護機制。"
+    },
+    {
+      "row": 94,
+      "timestamp": "2026-08-15 23:29:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.0,
+      "reason": "所有感測器皆在正常範圍內。",
+      "suggestion": "運行平穩，維持常規系統監視。"
+    },
+    {
+      "row": 95,
+      "timestamp": "2026-08-15 23:30:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "temp",
+        "pressure",
+        "vibration"
+      ],
+      "sensor_scores": {
+        "temp": 0.25,
+        "pressure": 0.6667,
+        "vibration": 0.3333
+      },
+      "score": 0.6667,
+      "reason": "全部感測器進入警告狀態，其中壓力更為偏低（0.98）。",
+      "suggestion": "建議重點監控壓力值，排查氣路密封，並同時注意溫度和振動在允許範圍內的回復進度。"
+    },
+    {
+      "row": 96,
+      "timestamp": "2026-08-15 23:31:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "temp"
+      ],
+      "sensor_scores": {
+        "temp": 0.4,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.4,
+      "reason": "溫度數值（44.2）偏低，落入警告區間。",
+      "suggestion": "建議監察預熱器與環境控溫運轉現狀，並在後續製程中防止失溫。"
+    },
+    {
+      "row": 97,
+      "timestamp": "2026-08-15 23:32:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.0,
+      "reason": "所有感測器皆在正常範圍內。",
+      "suggestion": "設備運作正常，請持續進行日常監控。"
+    },
+    {
+      "row": 98,
+      "timestamp": "2026-08-15 23:33:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [
+        "temp"
+      ],
+      "sensor_scores": {
+        "temp": 0.35,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.35,
+      "reason": "溫度指標再度偏低，處於警告狀態。",
+      "suggestion": "建議留意溫度回升速率並做好常規點檢作業。"
+    },
+    {
+      "row": 99,
+      "timestamp": "2026-08-15 23:34:00",
+      "detect": "abnormal",
+      "anomaly_sensors": [
+        "temp",
+        "vibration"
+      ],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 1.0,
+        "pressure": 0.0,
+        "vibration": 1.0
+      },
+      "score": 1.0,
+      "reason": "溫度達到 53.6，震動達 0.12，均突破各自異常上限門檻（52.0 與 0.07）。",
+      "suggestion": "必須立刻停機排查！此極可能是傳動阻力劇增、乾摩擦或發熱源與主軸異常機械干涉導致。請詳查溫控、散熱元件與驅動轉動部件機械平衡。"
+    },
+    {
+      "row": 100,
+      "timestamp": "2026-08-15 23:35:00",
+      "detect": "normal",
+      "anomaly_sensors": [],
+      "warning_sensors": [],
+      "sensor_scores": {
+        "temp": 0.0,
+        "pressure": 0.0,
+        "vibration": 0.0
+      },
+      "score": 0.0,
+      "reason": "所有感測器均回歸正常範圍內。",
+      "suggestion": "檢修完成後各項指標恢復正常，請持續實施日常點檢，嚴防異常復發。"
+    }
+  ]
+}
