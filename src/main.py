@@ -76,7 +76,45 @@ def build_input_data(sensor_data):
 
     return input_data
 
+def run_agent_in_batches(sensor_data):
+    """
+    Split sensor data into batches and send each batch
+    to the AI Agent sequentially.
+    """
 
+    BATCH_SIZE = 100
+    all_results = []
+    total = len(sensor_data)
+
+    for start in range(0, total, BATCH_SIZE):
+
+        end = min(
+            start + BATCH_SIZE,
+            total
+        )
+
+        batch_data = sensor_data[start:end]
+        print(
+            f"\nProcessing rows "
+            f"{start + 1} ~ {end} "
+            f"({end}/{total})..."
+        )
+        batch_input = build_input_data(
+            batch_data
+        )
+        batch_output = run_agent(
+            batch_input
+        )
+        all_results.extend(
+            batch_output["results"]
+        )
+        print(
+            f"Batch completed: "
+            f"{len(batch_output['results'])} results"
+        )
+    return {
+        "results": all_results
+    }
 
 # Save Output JSON
 def save_output(output_data, file_path):
@@ -91,42 +129,72 @@ def save_output(output_data, file_path):
 
 def main():
 
-    print("========================================")
-    print(" Smart Factory Sensor Analysis Agent")
-    print("========================================")
-
-
     # 1. Read sensor data
-    print("\n[1/4] Reading sensor data...")
+    print("\n[1/3] Reading sensor data...")
     sensor_data, ground_truth = read_sensor_data(
         SENSOR_DATA_PATH
     )
+    print(f"Dataset : {SENSOR_DATA_PATH}")
     print(f"Loaded {len(sensor_data)} sensor records.")
 
-    # 2. Build Input JSON
-    print("\n[2/4] Building Input JSON...")
-    input_data = build_input_data(
+    # 2. Run AI Agent in batches
+    print("\n[2/3] Running AI Agent...")
+    print("[✓] Detect anomalies")
+    print("[✓] Calculate anomaly scores")
+    print("[✓] Generate AI analysis")
+    output_data = run_agent_in_batches(
         sensor_data
     )
-    print("Input JSON created.")
+    print("\nAll batches completed.")
 
-    # 3. Run AI Agent
-    print("\n[3/4] Running AI Agent...")
-    output_data = run_agent(
-        input_data
-    )
-    print("AI Agent analysis completed.")
-
-    # 4. Save Output JSON
-
-    print("\n[4/4] Saving Output JSON...")
+    # 3. Save Output JSON
+    print("\n[3/3] Saving Output JSON...")
     save_output(
         output_data,
         OUTPUT_PATH
     )
-    print(f"Output saved to: {OUTPUT_PATH}")
+    
     print("\n========================================")
-    print(" Analysis completed successfully.")
+    print(" Smart Factory Sensor Analysis Agent")
+    print("========================================")
+
+    print("\nInput")
+    print("-" * 50)
+    print(f"Dataset : {SENSOR_DATA_PATH}")
+    print(f"Records : {len(sensor_data)}")
+    print("\nPipeline")
+    print("-" * 50)
+    print("[✓] Read sensor data")
+    print("[✓] Detect anomalies")
+    print("[✓] Calculate anomaly scores")
+    print("[✓] Generate AI analysis")
+
+    normal_count = sum(
+        1
+        for item in output_data["results"]
+        if item["detect"] == "normal"
+    )
+
+    abnormal_count = sum(
+        1
+        for item in output_data["results"]
+        if item["detect"] == "abnormal"
+    )
+    total = normal_count + abnormal_count
+    if total > 0:
+        anomaly_rate = abnormal_count / total * 100
+    else:
+        anomaly_rate = 0.0
+
+    print("\nResult")
+    print("-" * 50)
+    print(f"Normal Records   : {normal_count}")
+    print(f"Abnormal Records : {abnormal_count}")
+    print(f"Anomaly Rate     : {anomaly_rate:.2f}%")
+    print("\nOutput")
+    print("-" * 50)
+    print(f"Output saved to: {OUTPUT_PATH}")
+    print("\n Analysis completed successfully.")
     print("========================================")
 
 if __name__ == "__main__":
