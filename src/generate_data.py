@@ -280,7 +280,7 @@ def generate_data(row_count, interval_minutes):
 
     return data
 
-def save_csv(data, output_file):
+def save_csv(data):
 
     # Project root:
     # smart_factory_agent/
@@ -290,7 +290,7 @@ def save_csv(data, output_file):
     data_dir = project_root / "data"
     # Create data directory if it does not exist
     data_dir.mkdir(exist_ok=True)
-    output_path = data_dir / output_file
+    output_path = data_dir / "sensor_data.csv"
 
     fieldnames = [
         "timestamp",
@@ -335,12 +335,12 @@ def parse_arguments():
         default=1,
         help="Timestamp interval in minutes (1 or 5)."
     )
-    parser.add_argument(
-        "--output",
-        type=str,
-        default="sensor_data.csv",
-        help="Output CSV filename."
-    )
+    # parser.add_argument(
+    #     "--output",
+    #     type=str,
+    #     default="sensor_data.csv",
+    #     help="Output CSV filename."
+    # )
     args = parser.parse_args()
     if not 100 <= args.rows <= 500:
         parser.error(
@@ -356,10 +356,7 @@ def main():
         row_count=args.rows,
         interval_minutes=args.interval
     )
-    save_csv(
-        data,
-        args.output
-    )
+    save_csv(data)
 
     print(
         f"Generated {args.rows} rows "
